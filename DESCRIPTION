@@ -1,4 +1,4 @@
-Package: my_package
+Package: tongpackage
 Type: Package
 Title: Useful functions for personal use
 Version: 0.0.1
