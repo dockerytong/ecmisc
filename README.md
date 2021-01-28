@@ -5,3 +5,7 @@
 ## 安装方法
 
 `remotes::install_github('dockerytong/tongpackage')`
+```
+# 需要安装git2r包
+remotes::install_git('https://gitee.com/dockery/tongpackage.git')
+```
