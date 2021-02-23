@@ -14,3 +14,5 @@ read_eis <- function(dir) {
 
 read_eis('C:/Users/liuto/Desktop/20201117/EPS/stage 1/LB-EPS/eis-hm.txt') %>% 
   plot()
+
+
