@@ -7,7 +7,7 @@
 #'
 #' @examples
 read_lsv <- function(dir) {
-  setNames(x,
+  setNames(dir,
            gsub(
              pattern = '\\.(txt)|(csv)',
              replacement = '',
