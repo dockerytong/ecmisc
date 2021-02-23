@@ -1,17 +1,17 @@
-#' read cv data
+#' Read CV data
 #'
-#' @param x data filenames with full directory
+#' @param dir directory where cv in
 #'
 #' @return
 #' @export
 #'
 #' @examples
-read_cv <- function(x) {
+read_cv <- function(dir) {
     setNames(x,
              gsub(
                pattern = '\\.(txt)|(csv)',
                replacement = '',
-               x = basename(x)
+               x = basename(dir)
              )) %>%
     purrr::map_dfr(.,
                    fread,

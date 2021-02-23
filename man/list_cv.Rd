@@ -4,10 +4,10 @@
 \alias{list_cv}
 \title{list cv data files using regex}
 \usage{
-list_cv(x)
+list_cv(dir)
 }
 \arguments{
-\item{x}{dierectory where cv data in}
+\item{dir}{directory where cv data in}
 }
 \value{
 
