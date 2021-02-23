@@ -7,5 +7,5 @@
 #'
 #' @examples
 list_eis <- function(dir) {
-  list.files(path = dir, pattern = '(?i)(eis)\\.(txt)|(csv)', full.names = TRUE)
+  list.files(path = dir, pattern = "\\beis\\b|\\bEIS\\b\\.(txt)|(csv)", full.names = TRUE)
 }
