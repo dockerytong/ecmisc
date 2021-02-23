@@ -4,7 +4,7 @@ An R package for handling electrochemical data, currently build for CHI660D (CH 
 
 ## How to install
 
-`remotes::install_github('dockerytong/tongpackage')`
+`remotes::install_github('dockerytong/ecmisc')`
 
 ### For china mainland users
 
