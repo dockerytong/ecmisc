@@ -4,7 +4,7 @@
 \alias{plot_eis}
 \title{plot EIS data}
 \usage{
-plot_eis(data, type = "N", size = 1, color = "blue", asp = 1)
+plot_eis(data, type = "N", size = 1, asp = 1, color = "Sample")
 }
 \arguments{
 \item{data}{EIS data for plot}
@@ -13,9 +13,9 @@ plot_eis(data, type = "N", size = 1, color = "blue", asp = 1)
 
 \item{size}{point size, default as 1}
 
-\item{color}{point color, default as blue}
+\item{asp}{aspect ratio of plot}
 
-\item{asp}{plot aspect ratio default as 1}
+\item{color}{point color, default as blue}
 }
 \value{
 
