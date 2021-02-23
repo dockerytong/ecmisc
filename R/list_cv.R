@@ -8,5 +8,5 @@
 #'
 #' @examples
 list_cv <- function(x) {
-  list.files(x, pattern = '(?i)(cv)\\.(txt)|(csv)')
+  list.files(path = x, pattern = '(?i)(cv)\\.(txt)|(csv)', full.names = TRUE)
 }
