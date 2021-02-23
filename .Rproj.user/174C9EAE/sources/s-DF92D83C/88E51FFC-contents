@@ -1,0 +1,21 @@
+
+
+library(ecmisc)
+
+list_ec('C:/Users/liuto/Desktop/20201117/EPS/stage 2/LBEPS/','tafel') %>% 
+  read_ec(., 'tafel') %>% 
+  # split(., by = c('Sample')) %>% 
+  .[Sample == 'tafel-hm'] %>% 
+  ggplot(aes(Potential, `log(i)`)) +
+  geom_point(shape = 21) +
+  pub_theme() +
+  geom_smooth(method = 'lm', se = F, data = ~.[Potential < -0.4])
+
+
+list_ec('C:/Users/liuto/Desktop/20201117/EPS/stage 2/LBEPS/','tafel') %>% 
+  read_ec(., 'tafel') %>% 
+  # split(., by = c('Sample')) %>% 
+  .[Sample == 'tafel-hm'] %>% 
+  .[ order(`log(i)`)[[1]],Potential] 
+  
+  
