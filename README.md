@@ -10,5 +10,5 @@ An R package for handling electrochemical data, currently build for CHI660D (CH 
 
 ```
 install.packages('git2r)
-remotes::install_git('https://gitee.com/dockery/tongpackage.git')
+remotes::install_git('https://gitee.com/dockery/ecmisc.git')
 ```
