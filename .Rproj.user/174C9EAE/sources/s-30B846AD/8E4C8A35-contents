@@ -1,0 +1,19 @@
+Package: ecmisc
+Type: Package
+Title: An R package for handling electrochemical data
+Version: 0.0.1
+Author: Tong Liu
+Maintainer: Tong Liu <liutong369@outlook.com>
+Description: An R package for handling electrochemical data, 
+    currently build for CHI660D (CH Instruments, Texas) potentiostat.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+  data.table,
+  readxl,
+  magrittr,
+  purrr,
+  ggplot2,
+  patchwork
+RoxygenNote: 7.1.1
