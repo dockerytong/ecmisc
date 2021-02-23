@@ -16,7 +16,7 @@ read_eis <- function(dir) {
     purrr::map_dfr(
       .,
       fread,
-      col.names = c('Frequency', 'Re', 'Im', 'Mod', 'Phase'),
+      col.names = c('Frequency', 'Re', 'Im', 'Magnitude', 'Phase'),
       .id = 'Sample'
     )
 }
