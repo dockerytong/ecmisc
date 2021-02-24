@@ -7,7 +7,7 @@
 read_lsv(dir)
 }
 \arguments{
-\item{dir}{directory where cv in}
+\item{dir}{directory where lsv in}
 }
 \value{
 

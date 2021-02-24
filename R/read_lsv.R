@@ -1,6 +1,6 @@
 #' Read LSV data
 #'
-#' @param dir directory where cv in
+#' @param dir directory where lsv in
 #'
 #' @return
 #' @export
@@ -15,6 +15,6 @@ read_lsv <- function(dir) {
            )) %>%
     purrr::map_dfr(.,
                    fread,
-                   col.names = c('Time', 'Current'),
+                   col.names = c('Potential', 'Current'),
                    .id = 'Sample')
 }
