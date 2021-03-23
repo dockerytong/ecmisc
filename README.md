@@ -1,4 +1,4 @@
-# ecmisc readme
+# ecmisc readme 2021
 
 An R package for handling electrochemical data, currently build for CHI660D (CH Instruments, Texas) potentiostat.
 
