@@ -15,5 +15,6 @@ Depends:
   magrittr,
   purrr,
   ggplot2,
-  patchwork
+  patchwork,
+  corr2D
 RoxygenNote: 7.1.1
