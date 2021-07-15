@@ -10,7 +10,7 @@
 #' @examples
 plot_corr <- function(x, type = 'Re') {
   # 计算相关性矩阵
-  corr2D::corr2d(x) -> d1
+  corr2D::corr2d(Mat1 = x, Ref1 = x[1, ]) -> d1
   # 求同步矩阵
   d1$FT %>% Re() %>% as.data.frame() -> d2
   colnames(d2) <- d1$Wave1
