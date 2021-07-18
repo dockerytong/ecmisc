@@ -17,6 +17,6 @@ install.packages('git2r)
 remotes::install_git('https://gitee.com/dockery/ecmisc.git')
 ```
 
+## Citation
 
-
-
+[DOI:10.5281/zenodo.5112147]('./../pictures/zenodo.5112147.svg')
