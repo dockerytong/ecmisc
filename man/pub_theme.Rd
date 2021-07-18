@@ -15,6 +15,3 @@ pub_theme(asp = 1)
 \description{
 Customed ggplot theme for publication
 }
-\examples{
-
-}

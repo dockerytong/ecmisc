@@ -10,49 +10,57 @@
 #' @export
 #'
 #' @examples
-plot_eis <- function(data, type = 'N', size = 1, asp = 1, color = 'Sample') {
-  p <- ggplot(data = data) + pub_theme(asp)
-  if (type == 'N') {
+plot_eis <- function(data, type = "N", size = 1, asp = 1, color = "Sample") {
+  p <- ggplot(data = data) +
+    pub_theme(asp)
+  if (type == "N") {
     p + geom_point(
-      aes(x = Re,y = -Im, color = .data[[color]]),
+      aes(x = Re, y = -Im, color = .data[[color]]),
       shape = 21,
-      size = size) +
+      size = size
+    ) +
       labs(
-        x = 'Re (ohm)',
-        y = '-Im (ohm)'
+        x = "Re (ohm)",
+        y = "-Im (ohm)"
       )
-  } else if (type == 'B') {
+  } else if (type == "B") {
     p1 <- p + geom_point(aes(x = Frequency, y = Magnitude, color = .data[[color]]),
       shape = 21,
-      size = size) +
+      size = size
+    ) +
       scale_x_log10(
-        breaks = scales::trans_breaks("log10", function(x)
-          10 ^ x),
-        labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+        breaks = scales::trans_breaks("log10", function(x) {
+          10^x
+        }),
+        labels = scales::trans_format("log10", scales::math_format(10^.x))
       ) +
       scale_y_log10(
-        breaks = scales::trans_breaks("log10", function(x)
-          10 ^ x),
-        labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+        breaks = scales::trans_breaks("log10", function(x) {
+          10^x
+        }),
+        labels = scales::trans_format("log10", scales::math_format(10^.x))
       ) +
-      labs(x = 'Frequency (Hz)',
-           y = 'Magnitude (ohm)')
+      labs(
+        x = "Frequency (Hz)",
+        y = "Magnitude (ohm)"
+      )
 
     p2 <- p +
       geom_point(
         aes(x = Frequency, y = -Phase, color = .data[[color]]),
         shape = 21,
-        size = size) +
+        size = size
+      ) +
       scale_x_log10(
         breaks = scales::trans_breaks("log10", function(x) 10^x),
         labels = scales::trans_format("log10", scales::math_format(10^.x))
       ) +
       labs(
-        x = 'Frequency (Hz)',
-        y = '-Phase (degree)'
+        x = "Frequency (Hz)",
+        y = "-Phase (degree)"
       )
 
-    p <- p1 + p2 + plot_layout(guides = 'collect')
+    p <- p1 + p2 + plot_layout(guides = "collect")
     p
   }
 }

@@ -8,15 +8,15 @@
 #'
 #' @examples
 list_ec <- function(dir, type) {
-  if (type %in% c('CV','cv')) {
+  if (type %in% c("CV", "cv")) {
     list_cv(dir)
-  } else if (type %in% c('LSV','lsv')) {
+  } else if (type %in% c("LSV", "lsv")) {
     list_lsv(dir)
-  } else if (type %in% c('EIS','eis')) {
+  } else if (type %in% c("EIS", "eis")) {
     list_eis(dir)
-  } else if (type %in% c('TAFEL','Tafel','tafel')) {
+  } else if (type %in% c("TAFEL", "Tafel", "tafel")) {
     list_tafel(dir)
   } else {
-    print('Data file not found')
+    print("Data file not found")
   }
 }

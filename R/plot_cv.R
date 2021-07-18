@@ -9,13 +9,14 @@
 #' @export
 #'
 #' @examples
-plot_cv <- function(data, color = 'Sample', asp = 1, ...) {
+plot_cv <- function(data, color = "Sample", asp = 1, ...) {
   p <- ggplot(data) +
     geom_path(
-      aes(x = Potential, y = Current, color = .data[[color]]),...) +
+      aes(x = Potential, y = Current, color = .data[[color]]), ...
+    ) +
     labs(
-      x = 'Potenial (V) vs SCE',
-      y = 'Current (A)'
+      x = "Potenial (V) vs SCE",
+      y = "Current (A)"
     ) +
     pub_theme(asp)
   return(p)

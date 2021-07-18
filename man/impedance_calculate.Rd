@@ -19,6 +19,3 @@ impedance_calculate(ca_data, Amplitude = 0.01, ratio = 10)
 \description{
 calulate impedance from CA experiment
 }
-\examples{
-
-}
