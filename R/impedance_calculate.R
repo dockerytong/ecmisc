@@ -20,7 +20,7 @@ impedance_calculate <- function(ca_data, Amplitude = 0.01, ratio = 10) {
     # 计算每个点的频率和复阻抗
     .[, .(Freq = ((1:length(Current)) - 1) * c(rep(fs, fs + 1)) / length(Current), FFT = Amplitude / (fft(Current)))] %>%
     # 计算可能画图可能需要的参数
-    .[, .(Freq, Re = Re(FFT), Im = Im(FFT), Mod = Mod(FFT), Phase = Arg(FFT))] %>%
+    .[, .(Freq, Re = Re(FFT), Im = Im(FFT), Mod = Mod(FFT), Phase = Arg(FFT)*60)] %>%
     # FFT产生两端数据，提取结果的前半部分
     .[1:(length(.[[1]])/2)] %>%
     # 去掉部分高频噪声数据（需要进一步的代码对高频数据进行平滑）
