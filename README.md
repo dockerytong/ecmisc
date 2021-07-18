@@ -19,4 +19,4 @@ remotes::install_git('https://gitee.com/dockery/ecmisc.git')
 
 ## Citation
 
-[DOI:10.5281/zenodo.5112147]('./../pictures/zenodo.5112147.svg')
+![DOI](https://zenodo.org/badge/328548043.svg)
