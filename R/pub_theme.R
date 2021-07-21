@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-pub_theme <- function(asp = 1) {
+pub_theme <- function(asp = 1, legend.position = c(.5,.5)) {
   theme_classic() +
     theme(
       aspect.ratio = asp,
@@ -18,10 +18,11 @@ pub_theme <- function(asp = 1) {
       strip.text = element_text(color = "black", size = 8),
       strip.background = element_blank(),
       legend.background = element_blank(),
+      legend.position = legend.position,
       legend.title = element_text(color = "black", size = 8),
       legend.text = element_text(color = "black", size = 8),
       legend.text.align = 0,
-      panel.spacing = unit(0, "mm"),
+      panel.spacing = unit(2, "mm"),
       plot.margin = margin(
         t = .25,
         b = .25,
