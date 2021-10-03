@@ -1,34 +1,33 @@
 
-#' Customed ggplot theme for publication
+#' A ggplot2 theme for journal article
 #'
-#' @param asp control the aspect ratio of plot, default to 1.
+#' @param ...
 #'
 #' @return
 #' @export
 #'
 #' @examples
-pub_theme <- function(asp = 1, legend.position = c(.5,.5)) {
-  theme_classic() +
-    theme(
-      aspect.ratio = asp,
+#'
+pub_theme <- function(...) {
+  ggplot2::theme_classic() +
+    ggplot2::theme(
       axis.line = element_line(color = "black", size = .25),
       axis.ticks = element_line(color = "black", size = .25),
       axis.title = element_text(color = "black", size = 10),
       axis.text = element_text(color = "black", size = 8),
-      strip.text = element_text(color = "black", size = 8),
+      strip.text = element_text(color = "black", size = 8, hjust = 0),
       strip.background = element_blank(),
       legend.background = element_blank(),
-      legend.position = legend.position,
       legend.title = element_text(color = "black", size = 8),
       legend.text = element_text(color = "black", size = 8),
       legend.text.align = 0,
       panel.spacing = unit(2, "mm"),
       plot.margin = margin(
-        t = .25,
-        b = .25,
-        l = .25,
-        r = .25,
-        unit = "cm"
-      )
+        t = 5,
+        b = 5,
+        l = 5,
+        r = 5
+      ),
+      ...
     )
 }

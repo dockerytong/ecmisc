@@ -16,7 +16,3 @@ For china mainland users, install with Gitee is available with:
 install.packages('git2r)
 remotes::install_git('https://gitee.com/dockery/ecmisc.git')
 ```
-
-## Citation
-
-![DOI](https://zenodo.org/badge/328548043.svg)

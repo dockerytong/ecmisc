@@ -2,16 +2,19 @@
 % Please edit documentation in R/pub_theme.R
 \name{pub_theme}
 \alias{pub_theme}
-\title{Customed ggplot theme for publication}
+\title{A ggplot2 theme for journal article}
 \usage{
-pub_theme(asp = 1)
+pub_theme(...)
 }
 \arguments{
-\item{asp}{control the aspect ratio of plot, default to 1.}
+\item{...}{}
 }
 \value{
 
 }
 \description{
-Customed ggplot theme for publication
+A ggplot2 theme for journal article
+}
+\examples{
+
 }
